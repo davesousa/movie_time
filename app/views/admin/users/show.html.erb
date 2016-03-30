@@ -1,0 +1,9 @@
+<ul>
+<li><%= @user.firstname %></li>
+<li><%= @user.lastname %></li>
+<li><%= @user.email %></li>
+<li><%= @user.admin? %></li>
+<li><%= @user.created_at %></li>
+</ul>
+<%= link_to 'Delete User', [:admin, @user], method: :delete %>
+<a href="/admin/users/<%= @user.id %>/edit">EDIT</a>
